@@ -22,7 +22,7 @@ h1, h2, h3 {
 h1 {
     font-size: 2em; 
 }
-
+/* an id you can use only once */
 #logo {
     font-family: Baskerville, Palatino, sans-serif; 
     font-size: 2em;
@@ -34,7 +34,7 @@ h1 {
     border-radius: 0 0 10px 10px; 
     padding: 40px; 
 }
-
+/* a class you can use multiple times */
 .note {
     color:black; 
     border: 2px solid rgb(255, 255, 255); 
@@ -42,4 +42,20 @@ h1 {
     margin-top: 25px; 
     margin-bottom: 35px; 
     padding: 20px; 
+    border-radius: 5px 5px 5px 5px;
+}
+/* adding a .note with strong after it applies to any text that has the strong brackets around it idk */
+.note strong {
+    color: #fc6512; 
+}
+/* the max width helps to condense all information on the page + the margin helps to center all information */
+article {
+    max-width: 900px;
+    margin: 0 auto;
+}
+/* this style applies to any paragraph that comes right after a heading or h1 */
+h1+p{
+    color: rgb(255,255,255);
+    font-size: 1.2em;
+    line-height: 140%; 
 }
